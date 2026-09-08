@@ -23,14 +23,22 @@ git_pull -dir ".\prog\django_tutorial" # Change to your own path
 ```bash
 #!/bin/sh
 set -x
-gitpull() {
+git_pull() {
   cd $1
   git pull
   cd ~
 }
-gitpull ./prog/atc # Change to your own path
-gitpull ./python/itp-test # Change to your own path
+git_pull ./prog/atc # Change to your own path
+git_pull ./python/itp-test # Change to your own path
 ```
 
+## findgit.ps1: Find .git directories (Windows PowerShell)
+```powershell
+Get-ChildItem -Recurse -Directory -Filter ".git" -Force
+```
 
-
+## findgit.sh: Find .git directories (Linux/macOS Bash)
+```bash
+#!/bin/sh
+find . -type d -name ".git"
+```
