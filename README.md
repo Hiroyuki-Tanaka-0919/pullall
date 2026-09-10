@@ -6,7 +6,7 @@ PullAll is a command-line tool that allows you to pull updates from multiple Git
 
 - pullall.sh: A Bash script that performs the same function as the PowerShell script, but for Unix-based systems.
 
-## For Example (Windows PowerShell)
+## pullall.ps1: For Example (Windows PowerShell)
 ```powershell
 function git_pull {
     param([string]$dir)
@@ -19,7 +19,7 @@ git_pull -dir ".\prog\django_exam" # Change to your own path
 git_pull -dir ".\prog\django_tutorial" # Change to your own path
 ```
 
-## For Example (Linux/macOS Bash)
+## pullall.sh: For Example (Linux/macOS Bash)
 ```bash
 #!/bin/sh
 set -x
